@@ -48,28 +48,7 @@
 </head>
 
 <body>
-    <div id="app">
-        <!-- <div class="main-content">
-            <div class="section-organized organized-six">
-                <div class="grid">
-                    <div class="row">
-                        <div class="col l-4 m-12 c-12">
-                            <h2>What is LockDiary?</h2>
-                            <p class="paragraph">LockDiary is an Armored Digital Data Keeper that allows you to file away massive amounts of data, and you get to file each one the old fashioned way, into an alphabetized database. The app shows you 27 index card categories,
-                                from A to Z. Depending on the first letter of your info, it is filed into these cards. The app gives you the convenience of the good old alphabetized phone book, with the modern convenience of being able to hold any number
-                                of data entries, along with powerful search functionality.</p>
-                        </div>
-                        <div class="col l-o-2 l-4 m-12 c-12">
-                            <h2>Powerful Encryption</h2>
-                            <p class="paragraph">Every time you close and exit the app, the data is encypted securely. And it stays that way until you open the app again and enter your password. But a word of caution: there is no password recovery feature, so if you forget
-                                your password, you can say bye bye to the data stored in LockDiary. We have zero access to your phone, and we want to keep it that way. We cannot and will not assist with password recovery. So, make it a password that you
-                                can remember without having to write it down.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div> -->
-        <!--end main content-->
+    <div id="app">      
         <div class="section-1 text-center">
             <div class="grid">
                 <div class="row">
@@ -101,11 +80,47 @@
         <div class="section-2">
             <div class="grid">
                 <div class="row">
-                    <div class="col l-6 m-12 c-12">
-                        <h2>This is Video (missing ... )</h2>
+                    <div class="col l-7 m-12 c-12 section video-section responsive-padding" data-transition="fadeIn">                        
+                        <div class="videoWrapper">
+                            <div id="spokeVideoHolder" class="video-holder"> <button id="bt_mute"
+                                class="bt bt-default bt-mute" onclick="muteVideo()"> <i id="audioBtn"
+                                  class="fa fa-volume-up"></i> </button>
+                              <div id="spokeVideoPlay" class="play-button d-flex float shaded"
+                                onclick="playVideo(event)"> <i class="fa fa-play"></i> </div>
+                              <video id="spokeVideo" class="video" playsinline="" poster="assets/img/girl-german.jpg">
+                                <source id="webm" src="assets/video/video-bg.mp4" type="video/mp4">
+                              </video> </div>
+                          </div>
                     </div>
-                    <div class="col l-6 m-12 c-12">
-                        <img src="assets/img/1.png" alt="" width="400px">
+                    <div class="col l-5 m-12 c-12">
+                        <div class="slideshow-container">
+
+                            <div class="mySlides fade">
+                                <div class="numbertext">1 / 3</div>
+                                <img src="assets/img/1.png" style="width:100%">
+                            </div>
+
+                            <div class="mySlides fade">
+                                <div class="numbertext">2 / 3</div>
+                                <img src="assets/img/2.png" style="width:100%">
+                            </div>
+
+                            <div class="mySlides fade">
+                                <div class="numbertext">3 / 3</div>
+                                <img src="assets/img/3.png" style="width:100%">
+                            </div>
+
+                            <!-- <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                            <a class="next" onclick="plusSlides(1)">&#10095;</a> -->
+
+                        </div>
+                        <br>
+
+                        <!-- <div style="text-align:center">
+                            <span class="dot" onclick="currentSlide(1)"></span>
+                            <span class="dot" onclick="currentSlide(2)"></span>
+                            <span class="dot" onclick="currentSlide(3)"></span>
+                        </div> -->
                     </div>
                 </div>
             </div>
@@ -225,10 +240,61 @@
             </div>
         </div>
     </div>
+    <!-- end section 5 -->
+
+    <div class="section-6">
+        <div class="grid">
+            <div class="row">
+                <div class="col l-4">
+                    <h4>Our address</h4>
+                    <div class="footer-info">
+                        <p>522 W RIVERSIDE AVE STE N, <br> SPOKANE WA 99201-0580<br></p>
+                    </div>
+                </div>
+                <div class="col l-4">
+                    <h4>Let's read website</h4>
+                    <ul class="links">
+                        <li><a href="#">Terms and Conditions</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="col l-4 icons">
+                    <div style="text-align: right;">
+                        <p style="font-size: 30px;"> 
+                            <a href="#"><i class="fa-brands fa-facebook"></i></a> 
+                            <a href="#"><i class="fa-brands fa-twitter-square"></i></a>                             
+                        </p>
+                        <hr class="no_line" style="margin: 0 auto 25px auto">
+                        <h3>+61 (0) 383 766 284 <i class="fa-solid fa-mobile-screen-button" style="color: #3c8f69;;"></i></h3>
+                        <p class="call-us">If you have any question, feel free to call us</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="assets/js/global.js"></script>
+    <script>
+        
 
+        var slideIndex = 0;
+        showSlides();       
+
+        function showSlides() {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {
+                slideIndex = 1
+            }
+            slides[slideIndex - 1].style.display = "block";
+            setTimeout(showSlides, 5000); // Change image every 5 seconds
+        }
+    </script>
 </body>
 
 </html>
