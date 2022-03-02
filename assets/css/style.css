@@ -46,7 +46,7 @@ a {
 
 .heading {
     color: #252525;
-    font-size: 36px;
+    font-size: 38px;
     line-height: 40px;
     letter-spacing: 0px;
     font-family: "Poppins", Helvetica, Arial, sans-serif;
@@ -264,7 +264,7 @@ a {
 
 .videoWrapper {
     width: 100%;
-    max-height: 600px;
+    max-height: 800px;
 }
 
 .videoWrapper {
@@ -281,7 +281,7 @@ a {
 
 .video {
     width: 100%;
-    max-height: 700px;
+    max-height: 800px;
     outline: none;
     object-fit: contain;
 }
