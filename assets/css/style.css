@@ -180,7 +180,7 @@ a {
     font-size: 15px;
     padding: 8px 12px;
     position: absolute;
-    bottom: 8px;
+    bottom: -14%;
     width: 100%;
     text-align: center;
 }
@@ -693,6 +693,10 @@ ul.list_custom li:after {
 
 
 /* One page */
+
+.wrap-one {
+    margin-bottom: -30px;
+}
 
 .wrap-one img {
     width: 100%;
