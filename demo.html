@@ -54,7 +54,7 @@
                 <div class="row">
                     <div class="col l-3 m-12 c-12 box4">
                         <!-- <img src="assets/img/french-1.png" alt="french"> -->
-                        <div class="slideshow-container">
+                        <!-- <div class="slideshow-container">
 
                             <div class="mySlides fade">
                                 <a href="https://play.google.com/store/apps/details?id=com.us.jk.frenchlibrary"><img src="assets/img/french-1.png" style="width:100%"></a>
@@ -73,23 +73,83 @@
                                     </p>
                                 </div>
                             </div>
+                        </div> -->
+                        <div id="slider">
+                            <figure>
+                                <li>
+                                    <a href="https://play.google.com/store/apps/details?id=com.us.jk.frenchlibrary"><img src="assets/img/french-2.png" style="width:100%"></a>
+                                    <div class="text">
+                                        <p class="google-play text-center">
+                                            <a href="https://play.google.com/store/apps/details?id=com.us.jk.germanlibrary"><img src="assets/img/google-play-badge-2.png" alt=""></a>
+                                        </p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="https://play.google.com/store/apps/details?id=com.us.jk.spanishlibrary"><img src="assets/img/main.png" style="width:100%"></a>
+                                    <div class="text">
+                                        <p class="google-play text-center">
+                                            <a href="https://play.google.com/store/apps/details?id=com.us.jk.russianlibrary"><img src="assets/img/google-play-badge-2.png" alt=""></a>
+                                        </p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="https://play.google.com/store/apps/details?id=com.us.jk.frenchlibrary"><img src="assets/img/french-2.png" style="width:100%"></a>
+
+                                    <div class="text">
+                                        <p class="google-play text-center">
+                                            <a href="https://play.google.com/store/apps/details?id=com.us.jk.germanlibrary"><img src="assets/img/google-play-badge-2.png" alt=""></a>
+                                        </p>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <a href="https://play.google.com/store/apps/details?id=com.us.jk.spanishlibrary"><img src="assets/img/main.png" style="width:100%"></a>
+
+                                    <div class="text">
+                                        <p class="google-play text-center">
+                                            <a href="https://play.google.com/store/apps/details?id=com.us.jk.russianlibrary"><img src="assets/img/google-play-badge-2.png" alt=""></a>
+                                        </p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="https://play.google.com/store/apps/details?id=com.us.jk.frenchlibrary"><img src="assets/img/french-2.png" style="width:100%"></a>
+
+                                    <div class="text">
+                                        <p class="google-play text-center">
+                                            <a href="https://play.google.com/store/apps/details?id=com.us.jk.germanlibrary"><img src="assets/img/google-play-badge-2.png" alt=""></a>
+                                        </p>
+                                    </div>
+                                </li>
+                            </figure>
                         </div>
                     </div>
                     <div class="col l-6 m-12 c-12 box2">
-                        <div class="videoWrapper">
+                        <!-- <div class="videoWrapper">
                             <div id="spokeVideoHolder" class="video-holder"> <button id="bt_mute" class="bt bt-default bt-mute" onclick="muteVideo()"> <i id="audioBtn"
                                     class="fa fa-volume-up"></i> </button>
                                 <div id="spokeVideoPlay" class="play-button d-flex float shaded" onclick="playVideo(event)"> <i class="fa fa-play"></i> </div>
                                 <video id="spokeVideo" class="video" playsinline="" poster="assets/img/girl-4.jpg">
                                 <source id="webm" src="assets/video/video-bg.mp4" type="video/mp4">
                                 </video> </div>
+                        </div> -->
+                        <div class="video-wrapper">
+                            <video id="myVideo">
+                                <source src="assets/video/video-bg.mp4" type="video/mp4">
+                            </video>
                         </div>
+                        <ul class="my-controls">
 
+                            <li onclick="playVideo()">Play</li>
+                            <li onclick="pauseVideo()">Pause</li>
+                            <li onclick="muteVideo()">Mute</li>
+                            <li onclick="unmuteVideo()">Unmute</li>
+
+                        </ul>
 
 
                     </div>
                     <div class="col l-3 m-12 c-12 box6">
-                        <div class="slideshow-container">
+                        <!-- <div class="slideshow-container">
 
                             <div class="mySlides-2 fade">
                                 <a href="https://play.google.com/store/apps/details?id=com.us.jk.germanlibrary"><img src="assets/img/german-1.png" style="width:100%"></a>
@@ -108,6 +168,52 @@
                                     </p>
                                 </div>
                             </div>
+                        </div> -->
+
+                        <div id="slider-2">
+                            <figure>
+                                <li>
+                                    <a href="https://play.google.com/store/apps/details?id=com.us.jk.germanlibrary"><img src="assets/img/german.png"></a>
+                                    <div class="text">
+                                        <p class="google-play text-center">
+                                            <a href="https://play.google.com/store/apps/details?id=com.us.jk.germanlibrary"><img src="assets/img/google-play-badge-2.png" alt=""></a>
+                                        </p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="https://play.google.com/store/apps/details?id=com.us.jk.russianlibrary"><img src="assets/img/russian.png"></a>
+                                    <div class="text">
+                                        <p class="google-play text-center">
+                                            <a href="https://play.google.com/store/apps/details?id=com.us.jk.russianlibrary"><img src="assets/img/google-play-badge-2.png" alt=""></a>
+                                        </p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="https://play.google.com/store/apps/details?id=com.us.jk.germanlibrary"><img src="assets/img/german.png"></a>
+                                    <div class="text">
+                                        <p class="google-play text-center">
+                                            <a href="https://play.google.com/store/apps/details?id=com.us.jk.germanlibrary"><img src="assets/img/google-play-badge-2.png" alt=""></a>
+                                        </p>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <a href="https://play.google.com/store/apps/details?id=com.us.jk.russianlibrary"><img src="assets/img/russian.png"></a>
+                                    <div class="text">
+                                        <p class="google-play text-center">
+                                            <a href="https://play.google.com/store/apps/details?id=com.us.jk.russianlibrary"><img src="assets/img/google-play-badge-2.png" alt=""></a>
+                                        </p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="https://play.google.com/store/apps/details?id=com.us.jk.germanlibrary"><img src="assets/img/german.png"></a>
+                                    <div class="text">
+                                        <p class="google-play text-center">
+                                            <a href="https://play.google.com/store/apps/details?id=com.us.jk.germanlibrary"><img src="assets/img/google-play-badge-2.png" alt=""></a>
+                                        </p>
+                                    </div>
+                                </li>
+                            </figure>
                         </div>
                     </div>
                 </div>
@@ -124,38 +230,172 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="assets/js/global.js"></script>
     <script>
-        var slideIndex = 0;
-        showSlides();
+        // var slideIndex = 0;
+        // showSlides();
 
-        function showSlides() {
-            var i;
-            var slides = document.getElementsByClassName("mySlides");
-            for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
-            }
-            slideIndex++;
-            if (slideIndex > slides.length) {
-                slideIndex = 1
-            }
-            slides[slideIndex - 1].style.display = "block";
-            setTimeout(showSlides, 10000); // Change image every 5 seconds
+        // function showSlides() {
+        //     var i;
+        //     var slides = document.getElementsByClassName("mySlides");
+        //     for (i = 0; i < slides.length; i++) {
+        //         slides[i].style.display = "none";
+        //     }
+        //     slideIndex++;
+        //     if (slideIndex > slides.length) {
+        //         slideIndex = 1
+        //     }
+        //     slides[slideIndex - 1].style.display = "block";
+        //     setTimeout(showSlides, 10000); // Change image every 5 seconds
+        // }
+
+        // var slideIndex_2 = 0;
+        // showSlides_2();
+
+        // function showSlides_2() {
+        //     var i;
+        //     var slides = document.getElementsByClassName("mySlides-2");
+        //     for (i = 0; i < slides.length; i++) {
+        //         slides[i].style.display = "none";
+        //     }
+        //     slideIndex_2++;
+        //     if (slideIndex_2 > slides.length) {
+        //         slideIndex_2 = 1
+        //     }
+        //     slides[slideIndex_2 - 1].style.display = "block";
+        //     setTimeout(showSlides_2, 10000); // Change image every 5 seconds
+        // }
+        var responsiveSlider = function() {
+
+            var slider = document.getElementById("slider");
+            var sliderWidth = slider.offsetWidth;
+            var slideList = document.getElementById("slideWrap");
+            var count = 1;
+            var items = slideList.querySelectorAll("li").length;
+            var prev = document.getElementById("prev");
+            var next = document.getElementById("next");
+
+            window.addEventListener('resize', function() {
+                sliderWidth = slider.offsetWidth;
+            });
+
+            var prevSlide = function() {
+                if (count > 1) {
+                    count = count - 2;
+                    slideList.style.left = "-" + count * sliderWidth + "px";
+                    count++;
+                } else if (count = 1) {
+                    count = items - 1;
+                    slideList.style.left = "-" + count * sliderWidth + "px";
+                    count++;
+                }
+            };
+
+            var nextSlide = function() {
+                if (count < items) {
+                    slideList.style.left = "-" + count * sliderWidth + "px";
+                    count++;
+                } else if (count = items) {
+                    slideList.style.left = "0px";
+                    count = 1;
+                }
+            };
+
+            next.addEventListener("click", function() {
+                nextSlide();
+            });
+
+            prev.addEventListener("click", function() {
+                prevSlide();
+            });
+
+            setInterval(function() {
+                nextSlide()
+            }, 5000);
+
+
+
+
+        };
+
+        // window.onload = function() {
+        //     responsiveSlider();
+        // }
+
+
+        var responsiveSlider2 = function() {
+
+            var slider2 = document.getElementById("slider-2");
+            var sliderWidth2 = slider.offsetWidth;
+            var slideList2 = document.getElementById("slideWrap-2");
+            var count = 1;
+            var items = slideList2.querySelectorAll("li").length;
+            var prev = document.getElementById("prev");
+            var next = document.getElementById("next");
+
+            window.addEventListener('resize', function() {
+                sliderWidth2 = slider.offsetWidth;
+            });
+
+            var prevSlide = function() {
+                if (count > 1) {
+                    count = count - 2;
+                    slideList2.style.left = "-" + count * sliderWidth2 + "px";
+                    count++;
+                } else if (count = 1) {
+                    count = items - 1;
+                    slideList2.style.left = "-" + count * sliderWidth2 + "px";
+                    count++;
+                }
+            };
+
+            var nextSlide = function() {
+                if (count < items) {
+                    slideList2.style.left = "-" + count * sliderWidth2 + "px";
+                    count++;
+                } else if (count = items) {
+                    slideList2.style.left = "0px";
+                    count = 1;
+                }
+            };
+
+            next.addEventListener("click", function() {
+                nextSlide();
+            });
+
+            prev.addEventListener("click", function() {
+                prevSlide();
+            });
+
+            setInterval(function() {
+                nextSlide()
+            }, 12000);
+
+
+
+
+        };
+
+        window.onload = function() {
+            responsiveSlider();
+            responsiveSlider2();
         }
 
-        var slideIndex_2 = 0;
-        showSlides_2();
+        // Video
+        var myVideo = document.getElementById('myVideo');
 
-        function showSlides_2() {
-            var i;
-            var slides = document.getElementsByClassName("mySlides-2");
-            for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
-            }
-            slideIndex_2++;
-            if (slideIndex_2 > slides.length) {
-                slideIndex_2 = 1
-            }
-            slides[slideIndex_2 - 1].style.display = "block";
-            setTimeout(showSlides_2, 10000); // Change image every 5 seconds
+        function playVideo() {
+            myVideo.play();
+        }
+
+        function pauseVideo() {
+            myVideo.pause();
+        }
+
+        function muteVideo() {
+            myVideo.muted = true;
+        }
+
+        function unmuteVideo() {
+            myVideo.muted = false;
         }
     </script>
 </body>
