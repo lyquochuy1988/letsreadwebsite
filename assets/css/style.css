@@ -846,3 +846,19 @@ video {
         left: -400%;
     }
 }
+
+
+/* footer */
+
+footer {
+    padding: 0px 0px 50px 0px;
+}
+
+footer .link-bottom {
+    font-size: 15px;
+    line-height: 24px;
+}
+
+footer .link-bottom a {
+    color: gray;
+}
